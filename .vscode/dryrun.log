@@ -1,0 +1,6 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/dennisbenkhardt/Documents/cpp_m01'
+make: Leaving directory `/Users/dennisbenkhardt/Documents/cpp_m01'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+
