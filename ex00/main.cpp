@@ -3,31 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbenkhar <dbenkhardt@students.42wolfsburg. +#+  +:+       +#+        */
+/*   By: dbenkhar <dbenkhar@students.42wolfsburg.de +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 21:40:05 by dbenkhar          #+#    #+#             */
-/*   Updated: 2022/08/21 23:04:10 by dbenkhar         ###   ########.fr       */
+/*   Updated: 2022/08/22 03:16:44 by dbenkhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-void    newZombie(Zombie **Zombie, int i, char *str){
-    (*Zombie)[i].SetName(str);
-    (*Zombie)[i].Announce();
-}
+int main(void){
+	Zombie *z;
 
-int main(int argc, char **argv){
-    if (argc < 2){
-        std::cout << "put in some Zombie names..." << std::endl;
-    }
-    Zombie  *Zombies;
-
-    Zombies = new Zombie[argc - 1];
-    for (int i = 1; i < argc; i++){
-        std::cout << i << std::endl;
-        newZombie(&Zombies, i, argv[i]);
-    }
-    delete[] Zombies;
-    return (0);
+	z = newZombie("Dennis");
+	z->Announce();
+	randomChump("Vivian");
+	delete (z);
+	return (0);
 }

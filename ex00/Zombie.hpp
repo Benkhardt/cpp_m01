@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Zombie.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dbenkhar <dbenkhardt@students.42wolfsburg. +#+  +:+       +#+        */
+/*   By: dbenkhar <dbenkhar@students.42wolfsburg.de +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/21 21:26:43 by dbenkhar          #+#    #+#             */
-/*   Updated: 2022/08/21 23:07:22 by dbenkhar         ###   ########.fr       */
+/*   Updated: 2022/08/22 02:49:37 by dbenkhar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,17 +19,18 @@
 //includes end
 
 //classes
-
-class   Zombie{
-
-    public:
-        void    SetName(void *str); // set name of zombie
-        void    Announce(void); // zombie announcing themselves :D
-
-    private:
-        void *_name;
+class	Zombie{
+public:
+    void    Announce(void); // zombie announcing themselves :D
+			Zombie(std::string name);
+			~Zombie(void);
+private:
+	std::string _name;
 };
-
 //classes end
 
+//prototypes
+Zombie* newZombie( std::string name );
+void	randomChump( std::string name );
+//prototypes
 #endif

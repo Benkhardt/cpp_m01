@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dbenkhar <dbenkhardt@students.42wolfsburg. +#+  +:+       +#+         #
+#    By: dbenkhar <dbenkhar@students.42wolfsburg.de +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/21 21:25:32 by dbenkhar          #+#    #+#              #
-#    Updated: 2022/08/21 22:22:57 by dbenkhar         ###   ########.fr        #
+#    Updated: 2022/08/22 03:16:38 by dbenkhar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,6 +18,8 @@ CFLAGS = -Wall -Werror -Wextra -g
 
 SRC = 	main.cpp \
 		Zombie.cpp \
+		newZombie.cpp \
+		randomChump.cpp\
 
 OBJ = $(SRC:.c=.o)
 
